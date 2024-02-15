@@ -5,6 +5,8 @@ import {FormsModule} from "@angular/forms";
 import { DemoHomeComponent } from './demo-home/demo-home.component';
 import {DemoComponent} from "./demo.component";
 import {DemoRoutingModule} from "./demo-routing.module";
+import { DemoPipeComponent } from './demo-pipe/demo-pipe.component';
+import { MiMajPipe } from './mi-maj.pipe';
 
 
 
@@ -12,7 +14,9 @@ import {DemoRoutingModule} from "./demo-routing.module";
   declarations: [
     DemoBindingsComponent,
     DemoHomeComponent,
-    DemoComponent
+    DemoComponent,
+    DemoPipeComponent,
+    MiMajPipe
   ],
   imports: [
     CommonModule,

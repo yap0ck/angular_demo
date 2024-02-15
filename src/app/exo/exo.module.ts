@@ -6,13 +6,15 @@ import { ExoHomeComponent } from './exo-home/exo-home.component';
 import { ExoBindingsComponent } from './exo-bindings/exo-bindings.component';
 import {ExoComponent} from "./exo.component";
 import {FormsModule} from "@angular/forms";
+import { ExoPipeComponent } from './exo-pipe/exo-pipe.component';
 
 
 @NgModule({
   declarations: [
     ExoComponent,
     ExoHomeComponent,
-    ExoBindingsComponent
+    ExoBindingsComponent,
+    ExoPipeComponent
   ],
   imports: [
     CommonModule,
