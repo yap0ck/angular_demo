@@ -1,0 +1,8 @@
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: cornflowerblue;
+  width: 5vw;
+  height: 100%;
+}

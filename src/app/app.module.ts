@@ -18,9 +18,7 @@ import { ExoComponent } from './exo/exo.component';
     ContactComponent,
     HeaderComponent,
     NavbarComponent,
-    FooterComponent,
-    DemoComponent,
-    ExoComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
