@@ -1,0 +1,6 @@
+
+  <tr *ngFor="let article of liste; let i = index" >
+    <td>{{article}}</td>
+    <td><input type="button" value="Retirer article" (click)="remove(i)">
+  </tr>
+

@@ -1,0 +1,5 @@
+<div>
+  <ul *ngFor="let film of films">
+    <li *ngIf="film.titre.length%2==0">{{film.titre}}</li>
+  </ul>
+</div>

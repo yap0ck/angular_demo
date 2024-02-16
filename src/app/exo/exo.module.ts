@@ -7,6 +7,10 @@ import { ExoBindingsComponent } from './exo-bindings/exo-bindings.component';
 import {ExoComponent} from "./exo.component";
 import {FormsModule} from "@angular/forms";
 import { ExoPipeComponent } from './exo-pipe/exo-pipe.component';
+import { SecMinsecPipe } from './sec-minsec.pipe';
+import { ExoDirectivesComponent } from './exo-directives/exo-directives.component';
+import { ExoInputOutputComponent } from './exo-input-output/exo-input-output.component';
+import { EnfantComponent } from './exo-input-output/enfant/enfant.component';
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { ExoPipeComponent } from './exo-pipe/exo-pipe.component';
     ExoComponent,
     ExoHomeComponent,
     ExoBindingsComponent,
-    ExoPipeComponent
+    ExoPipeComponent,
+    SecMinsecPipe,
+    ExoDirectivesComponent,
+    ExoInputOutputComponent,
+    EnfantComponent
   ],
   imports: [
     CommonModule,

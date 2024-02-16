@@ -7,6 +7,11 @@ import {DemoComponent} from "./demo.component";
 import {DemoRoutingModule} from "./demo-routing.module";
 import { DemoPipeComponent } from './demo-pipe/demo-pipe.component';
 import { MiMajPipe } from './mi-maj.pipe';
+import { DemoDirectivesComponent } from './demo-directives/demo-directives.component';
+import {AppModule} from "../app.module";
+import {SurlignageDirective} from "./directives/surlignage.directive";
+import { DemoInputOutputComponent } from './demo-input-output/demo-input-output.component';
+import { EnfantComponent } from './demo-input-output/enfant/enfant.component';
 
 
 
@@ -16,12 +21,19 @@ import { MiMajPipe } from './mi-maj.pipe';
     DemoHomeComponent,
     DemoComponent,
     DemoPipeComponent,
-    MiMajPipe
+    MiMajPipe,
+    DemoDirectivesComponent,
+    DemoInputOutputComponent,
+    EnfantComponent
+  ],
+  exports: [
+    EnfantComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
-    DemoRoutingModule
+    DemoRoutingModule,
+    SurlignageDirective
   ]
 })
 export class DemoModule { }

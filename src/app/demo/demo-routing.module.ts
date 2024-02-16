@@ -4,6 +4,8 @@ import {DemoComponent} from "./demo.component";
 import {DemoBindingsComponent} from "./demo-bindings/demo-bindings.component";
 import {DemoHomeComponent} from "./demo-home/demo-home.component";
 import {DemoPipeComponent} from "./demo-pipe/demo-pipe.component";
+import {DemoDirectivesComponent} from "./demo-directives/demo-directives.component";
+import {DemoInputOutputComponent} from "./demo-input-output/demo-input-output.component";
 
 const routes: Routes = [
   {
@@ -12,7 +14,9 @@ const routes: Routes = [
     children:[
       {path: 'home', component: DemoHomeComponent},
       {path: 'bindings', component: DemoBindingsComponent},
-      {path: 'pipe', component: DemoPipeComponent}
+      {path: 'pipe', component: DemoPipeComponent},
+      {path: 'directives', component: DemoDirectivesComponent},
+      {path: 'input_output', component: DemoInputOutputComponent}
     ]
   }
 ];

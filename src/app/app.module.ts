@@ -8,8 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { DemoComponent } from './demo/demo.component';
-import { ExoComponent } from './exo/exo.component';
+
 
 @NgModule({
   declarations: [

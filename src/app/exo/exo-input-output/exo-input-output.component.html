@@ -1,0 +1,5 @@
+<label for="article">Article</label>
+<input type="text" [(ngModel)]="article" id="article">
+<input type="button" value="Ajouter au panier" (click)="ajouter()">
+<app-enfant [liste]="panier"
+(remove)="removeFromList($event)"></app-enfant>
