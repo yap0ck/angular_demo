@@ -11,6 +11,8 @@ import { SecMinsecPipe } from './sec-minsec.pipe';
 import { ExoDirectivesComponent } from './exo-directives/exo-directives.component';
 import { ExoInputOutputComponent } from './exo-input-output/exo-input-output.component';
 import { EnfantComponent } from './exo-input-output/enfant/enfant.component';
+import { ExoServiceComponent } from './exo-service/exo-service.component';
+import { InstructionsComponent } from './exo-service/instructions/instructions.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { EnfantComponent } from './exo-input-output/enfant/enfant.component';
     SecMinsecPipe,
     ExoDirectivesComponent,
     ExoInputOutputComponent,
-    EnfantComponent
+    EnfantComponent,
+    ExoServiceComponent,
+    InstructionsComponent
   ],
   imports: [
     CommonModule,

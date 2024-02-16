@@ -12,6 +12,7 @@ import {AppModule} from "../app.module";
 import {SurlignageDirective} from "./directives/surlignage.directive";
 import { DemoInputOutputComponent } from './demo-input-output/demo-input-output.component';
 import { EnfantComponent } from './demo-input-output/enfant/enfant.component';
+import { DemoServicesComponent } from './demo-services/demo-services.component';
 
 
 
@@ -24,7 +25,8 @@ import { EnfantComponent } from './demo-input-output/enfant/enfant.component';
     MiMajPipe,
     DemoDirectivesComponent,
     DemoInputOutputComponent,
-    EnfantComponent
+    EnfantComponent,
+    DemoServicesComponent
   ],
   exports: [
     EnfantComponent

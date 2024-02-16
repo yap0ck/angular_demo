@@ -6,6 +6,7 @@ import {ExoBindingsComponent} from "./exo-bindings/exo-bindings.component";
 import {ExoPipeComponent} from "./exo-pipe/exo-pipe.component";
 import {ExoDirectivesComponent} from "./exo-directives/exo-directives.component";
 import {ExoInputOutputComponent} from "./exo-input-output/exo-input-output.component";
+import {ExoServiceComponent} from "./exo-service/exo-service.component";
 
 const routes: Routes = [
   {
@@ -16,7 +17,8 @@ const routes: Routes = [
       {path: 'bindings', component: ExoBindingsComponent},
       {path: 'pipe', component: ExoPipeComponent},
       {path: 'directives', component: ExoDirectivesComponent},
-      {path: 'input_output', component:ExoInputOutputComponent}
+      {path: 'input_output', component:ExoInputOutputComponent},
+      {path: 'service', component:ExoServiceComponent}
     ]
   }
 ];

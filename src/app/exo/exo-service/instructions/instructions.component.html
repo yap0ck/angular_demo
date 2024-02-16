@@ -1,0 +1,6 @@
+<label for="input-user">Entrez votre valeur</label>
+<input type="number" [(ngModel)]="inputUser" id="input-user">
+<input type="button" (click)="verify()" value="vérifier">
+<ul>
+  <li *ngFor="let m of messages">{{m}}</li>
+</ul>
