@@ -5,7 +5,7 @@ import { ExoRoutingModule } from './exo-routing.module';
 import { ExoHomeComponent } from './exo-home/exo-home.component';
 import { ExoBindingsComponent } from './exo-bindings/exo-bindings.component';
 import {ExoComponent} from "./exo.component";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ExoPipeComponent } from './exo-pipe/exo-pipe.component';
 import { SecMinsecPipe } from './sec-minsec.pipe';
 import { ExoDirectivesComponent } from './exo-directives/exo-directives.component';
@@ -13,6 +13,7 @@ import { ExoInputOutputComponent } from './exo-input-output/exo-input-output.com
 import { EnfantComponent } from './exo-input-output/enfant/enfant.component';
 import { ExoServiceComponent } from './exo-service/exo-service.component';
 import { InstructionsComponent } from './exo-service/instructions/instructions.component';
+import { ExoFormsComponent } from './exo-forms/exo-forms.component';
 
 
 @NgModule({
@@ -26,12 +27,14 @@ import { InstructionsComponent } from './exo-service/instructions/instructions.c
     ExoInputOutputComponent,
     EnfantComponent,
     ExoServiceComponent,
-    InstructionsComponent
+    InstructionsComponent,
+    ExoFormsComponent
   ],
-  imports: [
-    CommonModule,
-    ExoRoutingModule,
-    FormsModule
-  ]
+    imports: [
+        CommonModule,
+        ExoRoutingModule,
+        FormsModule,
+        ReactiveFormsModule
+    ]
 })
 export class ExoModule { }

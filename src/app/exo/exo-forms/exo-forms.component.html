@@ -1,0 +1,31 @@
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>Date de naissance</th>
+    <th>n°</th>
+    <th>rue</th>
+    <th>cp</th>
+    <th>ville</th>
+  </tr>
+  <tr *ngFor="let p of personList">
+    <td>{{p.nom}}</td>
+    <td>{{p.prenom}}</td>
+    <td>{{p.dateDeNaissance}}</td>
+    <td>{{p.numero}}</td>
+    <td>{{p.rue}}</td>
+    <td>{{p.zip}}</td>
+    <td>{{p.city}}</td>
+  </tr>
+</table>
+<br>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="nom">
+  <input type="text" formControlName="prenom">
+  <input type="date" formControlName="dateDeNaissance">
+  <input type="number" formControlName="numero">
+  <input type="text" formControlName="rue">
+  <input type="number" formControlName="zip">
+  <input type="text" formControlName="city">
+  <input type="submit" [disabled]="!form.valid">
+</form>

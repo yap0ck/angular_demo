@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DemoBindingsComponent } from './demo-bindings/demo-bindings.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { DemoHomeComponent } from './demo-home/demo-home.component';
 import {DemoComponent} from "./demo.component";
 import {DemoRoutingModule} from "./demo-routing.module";
@@ -13,6 +13,7 @@ import {SurlignageDirective} from "./directives/surlignage.directive";
 import { DemoInputOutputComponent } from './demo-input-output/demo-input-output.component';
 import { EnfantComponent } from './demo-input-output/enfant/enfant.component';
 import { DemoServicesComponent } from './demo-services/demo-services.component';
+import { DemoFormsComponent } from './demo-forms/demo-forms.component';
 
 
 
@@ -26,7 +27,8 @@ import { DemoServicesComponent } from './demo-services/demo-services.component';
     DemoDirectivesComponent,
     DemoInputOutputComponent,
     EnfantComponent,
-    DemoServicesComponent
+    DemoServicesComponent,
+    DemoFormsComponent
   ],
   exports: [
     EnfantComponent
@@ -35,7 +37,8 @@ import { DemoServicesComponent } from './demo-services/demo-services.component';
     CommonModule,
     FormsModule,
     DemoRoutingModule,
-    SurlignageDirective
+    SurlignageDirective,
+    ReactiveFormsModule
   ]
 })
 export class DemoModule { }
