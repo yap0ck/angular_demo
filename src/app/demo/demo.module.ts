@@ -14,6 +14,7 @@ import { DemoInputOutputComponent } from './demo-input-output/demo-input-output.
 import { EnfantComponent } from './demo-input-output/enfant/enfant.component';
 import { DemoServicesComponent } from './demo-services/demo-services.component';
 import { DemoFormsComponent } from './demo-forms/demo-forms.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -28,7 +29,8 @@ import { DemoFormsComponent } from './demo-forms/demo-forms.component';
     DemoInputOutputComponent,
     EnfantComponent,
     DemoServicesComponent,
-    DemoFormsComponent
+    DemoFormsComponent,
+    LoginComponent
   ],
   exports: [
     EnfantComponent

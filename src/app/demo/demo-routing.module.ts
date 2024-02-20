@@ -8,6 +8,7 @@ import {DemoDirectivesComponent} from "./demo-directives/demo-directives.compone
 import {DemoInputOutputComponent} from "./demo-input-output/demo-input-output.component";
 import {DemoServicesComponent} from "./demo-services/demo-services.component";
 import {DemoFormsComponent} from "./demo-forms/demo-forms.component";
+import {GEOFFRE_ONLY} from "./guard/geoffrey-only.guard";
 
 const routes: Routes = [
   {
@@ -20,7 +21,7 @@ const routes: Routes = [
       {path: 'directives', component: DemoDirectivesComponent},
       {path: 'input_output', component: DemoInputOutputComponent},
       {path: 'service', component: DemoServicesComponent},
-      {path: 'forms', component: DemoFormsComponent}
+      {path: 'forms', component: DemoFormsComponent, canActivate: [GEOFFRE_ONLY]}
     ]
   }
 ];
