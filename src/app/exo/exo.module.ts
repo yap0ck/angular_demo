@@ -14,6 +14,8 @@ import { EnfantComponent } from './exo-input-output/enfant/enfant.component';
 import { ExoServiceComponent } from './exo-service/exo-service.component';
 import { InstructionsComponent } from './exo-service/instructions/instructions.component';
 import { ExoFormsComponent } from './exo-forms/exo-forms.component';
+import { PersonComponent } from './person/person.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { ExoFormsComponent } from './exo-forms/exo-forms.component';
     EnfantComponent,
     ExoServiceComponent,
     InstructionsComponent,
-    ExoFormsComponent
+    ExoFormsComponent,
+    PersonComponent,
+    LoginComponent
   ],
     imports: [
         CommonModule,

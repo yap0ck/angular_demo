@@ -8,6 +8,8 @@ import {ExoDirectivesComponent} from "./exo-directives/exo-directives.component"
 import {ExoInputOutputComponent} from "./exo-input-output/exo-input-output.component";
 import {ExoServiceComponent} from "./exo-service/exo-service.component";
 import {ExoFormsComponent} from "./exo-forms/exo-forms.component";
+import {PersonComponent} from "./person/person.component";
+import {LoginComponent} from "./login/login.component";
 
 const routes: Routes = [
   {
@@ -20,7 +22,9 @@ const routes: Routes = [
       {path: 'directives', component: ExoDirectivesComponent},
       {path: 'input_output', component:ExoInputOutputComponent},
       {path: 'service', component:ExoServiceComponent},
-      {path: 'forms', component:ExoFormsComponent}
+      {path: 'forms', component:ExoFormsComponent},
+      {path: 'person/:nom', component:PersonComponent},
+      {path: 'login', component:LoginComponent}
     ]
   }
 ];
